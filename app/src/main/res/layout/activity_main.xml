@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="362dp"
+        android:layout_height="198dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/editbox_background" />
+
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="85dp"
+        android:text="What can we help you ?"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/GoodDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Good Day, "
+        app:layout_constraintStart_toStartOf="@+id/help"
+        app:layout_constraintTop_toTopOf="@+id/username" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="58dp"
+        android:text="username"
+        app:layout_constraintEnd_toEndOf="@+id/help"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/drive_me"
+                android:layout_width="76dp"
+                android:layout_height="67dp"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintBottom_toBottomOf="@+id/assist_me"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.152"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/ic_baseline_directions_car_24" />
+
+            <ImageButton
+                android:id="@+id/assist_me"
+                android:layout_width="76dp"
+                android:layout_height="67dp"
+                android:layout_marginTop="244dp"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.192"
+                app:layout_constraintStart_toEndOf="@+id/drive_me"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_emoji_people_24" />
+
+            <ImageButton
+                android:id="@+id/help_me"
+                android:layout_width="76dp"
+                android:layout_height="67dp"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.428"
+                app:layout_constraintStart_toEndOf="@+id/assist_me"
+                app:layout_constraintTop_toTopOf="@+id/assist_me"
+                app:srcCompat="@drawable/ic_baseline_local_grocery_store_24" />
+
+            <TextView
+                android:id="@+id/drive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drive Me"
+                app:layout_constraintEnd_toEndOf="@+id/drive_me"
+                app:layout_constraintHorizontal_bias="0.466"
+                app:layout_constraintStart_toStartOf="@+id/drive_me"
+                app:layout_constraintTop_toBottomOf="@+id/drive_me" />
+
+            <TextView
+                android:id="@+id/assist"
+                android:layout_width="88dp"
+                android:layout_height="44dp"
+                android:text="Drive And Assist me"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="@+id/assist_me"
+                app:layout_constraintHorizontal_bias="0.47"
+                app:layout_constraintStart_toStartOf="@+id/assist_me"
+                app:layout_constraintTop_toBottomOf="@+id/assist_me" />
+
+            <TextView
+                android:id="@+id/help_me_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Help Me Buy"
+                app:layout_constraintEnd_toEndOf="@+id/help_me"
+                app:layout_constraintStart_toStartOf="@+id/help_me"
+                app:layout_constraintTop_toBottomOf="@+id/help_me" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
